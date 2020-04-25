@@ -4,7 +4,7 @@ from flask_jwt import JWT
 from security import authenticate,identity
 from resources.user import UserRegister
 from resources.items import Items,ItemsList
-from resources.store import Store,StoreLis  t
+from resources.store import Store,StoreLis 
 
 app = Flask(__name__)
 API = Api(app)
@@ -14,9 +14,7 @@ app.secret_key = 'jeevan'
 
 jwt = JWT(app,authenticate,identity) #/auth
 
-@app.before_first_request
-def create_table():
-    db.create_all()
+
 
 
 API.add_resource(Store,'/store/<string:name>')
