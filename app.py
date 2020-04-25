@@ -4,7 +4,7 @@ from flask_jwt import JWT
 from security import authenticate,identity
 from resources.user import UserRegister
 from resources.items import Items,ItemsList
-from resources.store import Store,StoreList
+from resources.store import Store,StoreLis  t
 
 app = Flask(__name__)
 API = Api(app)
