@@ -1,5 +1,5 @@
 # REST-API using Python Flask
-## The Packages need to application
+## The Packages need for application
 ```
 pip install flask
 pip install flask_restfull
